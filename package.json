@@ -1,15 +1,10 @@
 {
-  "name": "Appium",
+  "name": "appium-hackathon",
   "version": "1.0.0",
-  "description": "Appium Hackathon",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Saatva/Appium.git"
+    "test": "mocha tests/test.js --timeout 50000"
   },
   "keywords": [],
   "author": "",
