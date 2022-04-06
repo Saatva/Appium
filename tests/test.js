@@ -10,7 +10,7 @@ const iosOptions = {
         platformName: 'iOS',
         automationName: 'XCUITest',
         deviceName: 'iPhone Simulator',
-        platformVersion: '13',
+        platformVersion: '15.4',
         browserName: 'Safari'
     }
 }
@@ -22,6 +22,6 @@ describe('Create Safari session', function () {
     await client.url('https://www.google.com');
     const title = await client.getTitle();
     assert.equal(title, 'Google');
-    await client.deleteSession();
+    // await client.deleteSession();
   });
 });
