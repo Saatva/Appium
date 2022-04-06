@@ -1,0 +1,27 @@
+{
+  "name": "Appium",
+  "version": "1.0.0",
+  "description": "Appium Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saatva/Appium.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saatva/Appium/issues"
+  },
+  "homepage": "https://github.com/Saatva/Appium#readme",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^8.0.1",
+    "webdriverio": "^7.19.3"
+  }
+}
