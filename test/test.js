@@ -3,7 +3,7 @@ const assert = require('chai').assert;
 
 const iosOptions = {
     path: '/wd/hub',
-    host: 'localhost',
+    host: '0.0.0.0',
     port: 4723,
     logLevel: 'info',
     capabilities: { 
