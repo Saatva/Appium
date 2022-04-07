@@ -9,19 +9,25 @@ const iosOptions = {
     capabilities: { 
         platformName: 'iOS',
         automationName: 'XCUITest',
-        deviceName: 'iPhone Simulator',
+        deviceName: 'iPad Simulator',
         platformVersion: '15.4',
         browserName: 'Safari'
     }
 }
 
-
 describe('Create Safari session', function () {
-  it('should create and destroy IOS Safari session', async function () {
+  
+  
+  it('Go to saatva homepage and check title', async function () { 
+
     const client = await webdriverio.remote(iosOptions);
-    await client.url('https://www.google.com');
+    await client.url('https://www.saatva.com');  
     const title = await client.getTitle();
-    assert.equal(title, 'Google');
-    // await client.deleteSession();
+    assert.equal(title, 'Saatva | Shop Mattresses, Bedding, Bed Frames & Bed Bases');
+    let screenshot = client.saveScreenshot('./test-test.png')
+    
+    await client.deleteSession();
+
   });
+
 });
