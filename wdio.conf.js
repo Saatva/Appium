@@ -38,7 +38,8 @@ exports.config = {
         automationName: 'XCUITest',
         browserName: 'Safari',
         maxInstances: 1,
-        deviceName: 'iPhone Simulator',
+        deviceName: 'iPhone 12',
+        // udid: '285045D0-7562-4298-815A-BD38E2FAC3A2', //Modify with the UDID of your device which appears on the list after running the command `xcrun simctl list` 
         platformVersion: '15.4', 
         //safariInitialUrl: 'https://saatva.com',
 
